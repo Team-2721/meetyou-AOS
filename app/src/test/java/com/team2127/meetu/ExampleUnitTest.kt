@@ -1,4 +1,4 @@
-package com.team2127.meetyou_aos
+package com.team2127.meetu
 
 import org.junit.Test
 
