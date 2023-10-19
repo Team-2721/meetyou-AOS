@@ -15,7 +15,7 @@
             android:id="@+id/iv_splash_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_meetu_main_logo"
+            android:src="@drawable/ic_meetu_main_logo_white"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
