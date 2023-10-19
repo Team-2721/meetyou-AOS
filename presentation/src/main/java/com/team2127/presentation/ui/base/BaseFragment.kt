@@ -1,17 +1,14 @@
 package com.team2127.presentation.base
 
-import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.annotation.LayoutRes
-import androidx.databinding.DataBindingUtil
 import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 
 abstract class BaseFragment<VB : ViewDataBinding>(
-    @LayoutRes private val layoutRes: Int
+    private val bindingFactory: (LayoutInflater, ViewGroup?, Boolean) -> VB
 ): Fragment() {
 
     private var _binding: VB? = null
@@ -22,7 +19,7 @@ abstract class BaseFragment<VB : ViewDataBinding>(
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = DataBindingUtil.inflate(inflater, layoutRes, container, false)
+        _binding = bindingFactory(inflater, container, false)
         return binding.run {
             lifecycleOwner = viewLifecycleOwner
             root
@@ -39,11 +36,6 @@ abstract class BaseFragment<VB : ViewDataBinding>(
     }
 
     protected open fun initCollector(){
-    }
-
-    protected fun navigateActivity(activity: Class<*>) {
-        startActivity(Intent(requireContext(), activity))
-        requireActivity().finish()
     }
 
     override fun onDestroyView() {
