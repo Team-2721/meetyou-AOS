@@ -10,34 +10,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75e1e6e7-bd3c-4b03-a0c9-8db63f5a72b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/font/notosans_medium.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/font/notosans_regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/font/notosans_semi_bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/LoginModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/MainModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/NetworkModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/login/LoginRequestDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/login/LoginResponseDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/repository/LoginRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/service/LoginService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/source/LoginDataSource.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/team2127/domain/model/login/LoginReqInfo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/team2127/domain/model/login/LoginResInfo.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/team2127/domain/repository/LoginRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/team2127/domain/usecase/login/LoginUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/MainActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/MainViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/layout/activity_main.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/team2127/meetu/HiltApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/team2127/meetu/HiltApplication.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v33/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/colors.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/team2127/meetu/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/data/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/presentation/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,12 +51,23 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="valueResourceFile" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Data Class" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Merge.Settings">
+    <option name="BRANCH" value="feature/MeetU-03" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/MeetU-03" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -79,7 +87,7 @@
     &quot;project.structure.last.edited&quot;: &quot;SDK Location&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;testing.instrumented.configuration&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;memory.settings&quot;
   }
 }</component>
   <component name="PsdUISettings">
@@ -88,9 +96,15 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-194347154">
+      <recent name="com.team2127.presentation" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/presentation/src/main/res/font" />
       <recent name="$PROJECT_DIR$/presentation/src/main/res/values" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.team2127.data.model.login" />
     </key>
   </component>
   <component name="RunManager">

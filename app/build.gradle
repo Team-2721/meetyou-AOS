@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace 'com.team2127.meetyou_aos'
+    namespace 'com.team2127.meetu'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.team2127.meetyou_aos"
+        applicationId "com.team2127.meetu"
         minSdk 28
         targetSdk 34
         versionCode 1
