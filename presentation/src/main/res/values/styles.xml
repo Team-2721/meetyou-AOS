@@ -53,4 +53,9 @@
         <item name="android:textColor">@color/black</item>
         <item name="android:fontFamily">@font/notosans_semi_bold</item>
     </style>
+
+    <style name="ShapeableImageViewCircle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
 </resources>

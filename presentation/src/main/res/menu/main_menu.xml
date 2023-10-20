@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/menu_main_setting"
+        android:title="@string/setting"
+        android:icon="@drawable/ic_setting"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_main_alarm"
+        android:title="@string/alarm"
+        android:icon="@drawable/ic_alarm_on"
+        app:showAsAction="always" />
+</menu>

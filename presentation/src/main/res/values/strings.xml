@@ -8,4 +8,17 @@
     <string name="login_sign_in">로그인</string>
     <string name="login_sign_up">회원가입</string>
 
+    <!--  main  -->
+    <string name="main_input_code">코드 입력</string>
+    <string name="main_before_vote">투표 전</string>
+    <string name="main_vote_ing">투표 중</string>
+    <string name="main_after_vote">투표 완료</string>
+        <!--api 연동후 타입에 맞게 변경 필요-->
+    <string name="main_room_date">2023.03.23 – 04.23</string>
+    <string name="main_room_code">code : %d</string>
+
+    <!-- menu  -->
+    <string name="setting">환경설정</string>
+    <string name="alarm">알림</string>
+
 </resources>
