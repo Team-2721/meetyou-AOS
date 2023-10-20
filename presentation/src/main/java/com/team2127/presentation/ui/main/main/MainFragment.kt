@@ -17,5 +17,5 @@ class MainFragment: BaseFragment<FragmentMainBinding>(
         super.onViewCreated(view, savedInstanceState)
         binding.vm = viewModel
     }
-    
+
 }

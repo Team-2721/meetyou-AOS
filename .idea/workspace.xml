@@ -10,22 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75e1e6e7-bd3c-4b03-a0c9-8db63f5a72b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/main/MainFragment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/main/MainViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/drawable/ic_alarm_on.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/drawable/ic_delete_circle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/drawable/ic_down_orange.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/drawable/ic_plus_orange.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/drawable/ic_search_orange.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/drawable/ic_setting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/drawable/ic_up_orange.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/layout/fragment_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/layout/item_main_room.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/layout/item_round_profile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/menu/main_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/ResponseDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/main/AttendeeInfoDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/main/GenerateRoomDataDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/main/GenerateRoomRequestDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/service/MainService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/MainModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/MainModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/service/LoginService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/service/LoginService.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/main/MainFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/main/MainFragment.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +36,12 @@
       <list>
         <option value="valueResourceFile" />
         <option value="Kotlin File" />
-        <option value="Kotlin Interface" />
-        <option value="Kotlin Data Class" />
         <option value="navigationResourceFile" />
-        <option value="Kotlin Class" />
         <option value="layoutResourceFile" />
         <option value="resourceFile" />
+        <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
+        <option value="Kotlin Data Class" />
       </list>
     </option>
   </component>
