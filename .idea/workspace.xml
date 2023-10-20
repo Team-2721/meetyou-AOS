@@ -10,39 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75e1e6e7-bd3c-4b03-a0c9-8db63f5a72b9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/LoginModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/MainModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/NetworkModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/login/LoginRequestDTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/login/LoginResponseDTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/repository/LoginRepositoryImpl.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/service/LoginService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/source/LoginDataSource.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/team2127/domain/model/login/LoginReqInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/team2127/domain/model/login/LoginResInfo.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/team2127/domain/repository/LoginRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/domain/src/main/java/com/team2127/domain/usecase/login/LoginUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/MainViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/login/login/LoginFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/login/login/LoginViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/drawable/corners_all_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/drawable/corners_all_10_stroke.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/drawable/ic_meetu_main_logo_color.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/presentation/src/main/res/layout/fragment_login.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/team2127/meetu/ExampleInstrumentedTest.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/data/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/domain/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/domain/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/themes.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/login/LoginActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/splash/SplashActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/splash/SplashActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/jm/.android/avd/Pixel_2_API_31.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R5CT20FVEAR]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -55,6 +41,9 @@
         <option value="Kotlin File" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Data Class" />
+        <option value="navigationResourceFile" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -65,7 +54,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/MeetU-03" />
+        <entry key="$PROJECT_DIR$" value="feature/MeetU-05" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,24 +67,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDK Location&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;memory.settings&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/Users/jm/Desktop/androidReview/MeetU/presentation/src/main/res/drawable",
+    "project.structure.last.edited": "SDK Location",
+    "project.structure.proportion": "0.17",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "memory.settings"
   }
-}</component>
+}]]></component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
     <option name="LAST_EDITED_BUILD_TYPE" value="release" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/presentation/src/main/res/drawable" />
+      <recent name="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/util" />
+      <recent name="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui" />
+    </key>
     <key name="android.template.-194347154">
       <recent name="com.team2127.presentation" />
     </key>

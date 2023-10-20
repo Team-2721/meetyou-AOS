@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">MeetU</string>
+
+    <!-- login -->
+    <string name="login_app_explain">편리한 약속 잡기</string>
+    <string name="login_hint_id">아이디 입력</string>
+    <string name="login_hint_password">비밀번호 입력</string>
+    <string name="login_sign_in">로그인</string>
+    <string name="login_sign_up">회원가입</string>
+
 </resources>

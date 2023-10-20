@@ -9,6 +9,6 @@ import kotlin.math.log
 class LoginUseCase @Inject constructor(
     private val repository: LoginRepository
 ) {
-    suspend operator fun invoke(loginReqInfo: LoginReqInfo): LoginResInfo =
+    suspend operator fun invoke(loginReqInfo: LoginReqInfo): Result<LoginResInfo> =
         repository.login(loginReqInfo)
 }

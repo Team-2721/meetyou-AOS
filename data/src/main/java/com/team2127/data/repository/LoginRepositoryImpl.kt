@@ -11,8 +11,16 @@ import javax.inject.Inject
 class LoginRepositoryImpl @Inject constructor(
     private val dataSource: LoginDataSource
 ): LoginRepository{
-    override suspend fun login(loginReqInfo: LoginReqInfo): LoginResInfo =
-        dataSource.login(LoginRequestDTO(loginReqInfo.username, loginReqInfo.password)).toLoginResInfo()
+    override suspend fun login(loginReqInfo: LoginReqInfo): Result<LoginResInfo> {
+        val result = runCatching { dataSource.login(
+            LoginRequestDTO(loginReqInfo.username, loginReqInfo.password)) }
+
+        return if(result.isSuccess){
+            Result.success(result.getOrThrow().toLoginResInfo())
+        } else {
+            Result.failure(result.exceptionOrNull()!!)
+        }
+    }
 
     private fun LoginResponseDTO.toLoginResInfo() =
         LoginResInfo(

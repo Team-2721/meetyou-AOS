@@ -2,9 +2,9 @@ package com.team2127.presentation.ui.splash
 
 import android.content.Intent
 import androidx.activity.viewModels
+import com.team2127.presentation.MainActivity
 import com.team2127.presentation.base.BaseActivity
 import com.team2127.presentation.databinding.ActivitySplashBinding
-import com.team2127.presentation.ui.login.LoginActivity
 import com.team2127.presentation.ui.util.repeatOnStarted
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
@@ -27,7 +27,7 @@ class SplashActivity: BaseActivity<ActivitySplashBinding>(
     }
 
     private fun moveToLogin(){
-        val intent = Intent(this, LoginActivity::class.java)
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
     }
