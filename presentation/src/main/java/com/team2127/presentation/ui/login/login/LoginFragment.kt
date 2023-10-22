@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.team2127.presentation.ui.base.BaseFragment
 import com.team2127.presentation.databinding.FragmentLoginBinding
 import com.team2127.presentation.ui.util.repeatOnStarted
@@ -35,7 +36,10 @@ class LoginFragment: BaseFragment<FragmentLoginBinding>(
         }
     }
 
-    private fun moveToMain(){}
+    private fun moveToMain(){
+        val action = LoginFragmentDirections.actionLoginFragmentToMainFragment()
+        findNavController().navigate(action)
+    }
 
     private fun moveToSignUp(){}
 

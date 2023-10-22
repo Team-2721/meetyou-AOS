@@ -1,17 +1,17 @@
 package com.team2127.data.di
 
-import android.os.Build
+import com.orhanobut.logger.BuildConfig
 import com.squareup.moshi.Moshi
-import com.team2127.data.BuildConfig
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
-import okhttp3.OkHttp
+import okhttp3.JavaNetCookieJar
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
+import java.net.CookieManager
 import javax.inject.Qualifier
 import javax.inject.Singleton
 
@@ -20,6 +20,10 @@ private const val BASE_URL = "http://meetyou-backend-prod.ap-northeast-2.elastic
 @Qualifier
 @Retention(AnnotationRetention.BINARY)
 annotation class NormaNetworkObject
+
+@Qualifier
+@Retention(AnnotationRetention.BINARY)
+annotation class SessionNetworkObject
 
 @Module
 @InstallIn(SingletonComponent::class)
@@ -47,6 +51,38 @@ object NetworkModule{
     fun provideNormalRetrofit(
         @NormaNetworkObject okHttpClient: OkHttpClient,
         moshi: Moshi,
+    ): Retrofit =
+        Retrofit.Builder()
+            .client(okHttpClient)
+            .baseUrl(BASE_URL)
+            .addConverterFactory(MoshiConverterFactory.create(moshi))
+            .build()
+
+    @SessionNetworkObject
+    @Singleton
+    @Provides
+    fun provideSessionOkHttpClient(
+    ): OkHttpClient =
+        if (BuildConfig.DEBUG) {
+            val loggingInterceptor = HttpLoggingInterceptor().apply {
+                setLevel(HttpLoggingInterceptor.Level.BODY)
+            }
+            OkHttpClient.Builder()
+                .addInterceptor(loggingInterceptor)
+                .cookieJar(JavaNetCookieJar(CookieManager()))
+                .build()
+        } else {
+            OkHttpClient.Builder()
+                .cookieJar(JavaNetCookieJar(CookieManager()))
+                .build()
+        }
+
+    @SessionNetworkObject
+    @Singleton
+    @Provides
+    fun provideAuthRetrofit(
+        @SessionNetworkObject okHttpClient: OkHttpClient,
+        moshi: Moshi
     ): Retrofit =
         Retrofit.Builder()
             .client(okHttpClient)

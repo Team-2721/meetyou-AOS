@@ -1,5 +1,6 @@
 package com.team2127.data.repository
 
+import com.team2127.data.model.ResponseDTO
 import com.team2127.data.model.login.LoginRequestDTO
 import com.team2127.data.model.login.LoginResponseDTO
 import com.team2127.data.source.LoginDataSource
@@ -16,16 +17,13 @@ class LoginRepositoryImpl @Inject constructor(
             LoginRequestDTO(loginReqInfo.username, loginReqInfo.password)) }
 
         return if(result.isSuccess){
-            Result.success(result.getOrThrow().toLoginResInfo())
+            val loginInfo = result.getOrThrow()
+            Result.success(LoginResInfo(
+                loginInfo.isSuccess,
+                loginInfo.detail
+            ))
         } else {
             Result.failure(result.exceptionOrNull()!!)
         }
     }
-
-    private fun LoginResponseDTO.toLoginResInfo() =
-        LoginResInfo(
-            isLoginsSuccess = isLoginsSuccess,
-            detail = detail
-        )
-
 }

@@ -26,6 +26,6 @@ class LoginModule {
 
     @ActivityRetainedScoped
     @Provides
-    fun provideLoginService(@NormaNetworkObject retrofit: Retrofit): LoginService =
+    fun provideLoginService(@SessionNetworkObject retrofit: Retrofit): LoginService =
         retrofit.create(LoginService::class.java)
 }
