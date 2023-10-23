@@ -59,11 +59,13 @@
             app:layout_constraintEnd_toStartOf="@+id/btn_item_main_room_memo_more"
             tools:text="메모를 더 보고 싶으면 옆에 더보기를 눌러주세요. 누르면 진짜로 보여요"/>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatToggleButton
             android:id="@+id/btn_item_main_room_memo_more"
             android:layout_width="15dp"
             android:layout_height="8dp"
-            android:background="@drawable/ic_down_orange"
+            android:textOn=""
+            android:textOff=""
+            android:background="@drawable/selector_up_down_orange"
             android:layout_marginEnd="28dp"
             app:layout_constraintTop_toTopOf="@+id/tv_item_main_room_memo"
             app:layout_constraintBottom_toBottomOf="@+id/tv_item_main_room_memo"

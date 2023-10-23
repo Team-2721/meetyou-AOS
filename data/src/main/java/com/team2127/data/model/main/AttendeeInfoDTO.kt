@@ -8,4 +8,5 @@ data class AttendeeInfoDTO(
     @field:Json(name = "pk") val attendeeId: Int,
     @field:Json(name = "nickname") val nickname: Int,
     @field:Json(name = "avatar") val avatar: Int,
+    @field:Json(name = "vote") val vote: List<String>,
 )

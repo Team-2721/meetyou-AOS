@@ -8,6 +8,6 @@ import javax.inject.Inject
 class GetRoomListUseCase @Inject constructor(
     private val repository: MainRepository
 ) {
-    suspend operator fun invoke():  Result<ResponseDataInfo<GetRoomListInfo>> =
+    suspend operator fun invoke(hasNext : Boolean = true):  Result<ResponseDataInfo<GetRoomListInfo>> =
         repository.getRoomList()
 }

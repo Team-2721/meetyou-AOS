@@ -4,7 +4,7 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 
 @JsonClass(generateAdapter = true)
-data class GenerateRoomDataDTO(
+data class GetRoomDetailDTO(
     @field:Json(name = "pk") val roomId: Int,
     @field:Json(name = "name") val roomName: Int,
     @field:Json(name = "attendee_number") val attendeeNumber: Int,

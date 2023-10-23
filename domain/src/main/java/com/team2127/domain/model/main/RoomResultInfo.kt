@@ -6,4 +6,6 @@ data class RoomResultInfo(
     val attendeeNumber: Int,
     val date: String,
     val code: String?,
+    val status: String,
+    val comment: String
 )

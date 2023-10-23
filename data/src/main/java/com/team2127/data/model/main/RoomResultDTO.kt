@@ -10,4 +10,6 @@ data class RoomResultDTO(
     @field:Json(name = "attendee_number") val attendeeNumber: Int,
     @field:Json(name = "date") val date: String,
     @field:Json(name = "code") val code: String?,
+    @field:Json(name = "status") val status: String,
+    @field:Json(name = "memo") val comment: String,
 )
