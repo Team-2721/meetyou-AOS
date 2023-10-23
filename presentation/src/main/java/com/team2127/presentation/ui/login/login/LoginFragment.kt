@@ -41,7 +41,10 @@ class LoginFragment: BaseFragment<FragmentLoginBinding>(
         findNavController().navigate(action)
     }
 
-    private fun moveToSignUp(){}
+    private fun moveToSignUp(){
+        val action = LoginFragmentDirections.actionLoginFragmentToSignUpFragment()
+        findNavController().navigate(action)
+    }
 
     private fun handleEvent(event: LoginViewModel.Event){
         when (event){

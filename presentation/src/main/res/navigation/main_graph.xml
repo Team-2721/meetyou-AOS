@@ -11,12 +11,23 @@
         <action
             android:id="@+id/action_loginFragment_to_mainFragment"
             app:destination="@+id/mainFragment"/>
+
+        <action
+            android:id="@+id/action_loginFragment_to_signUpFragment"
+            app:destination="@+id/signUpFragment"/>
     </fragment>
 
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.team2127.presentation.ui.main.main.MainFragment"
         android:label="MainFragment">
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.team2127.presentation.ui.login.sign_up.SignUpFragment"
+        android:label="SignUpFragment">
 
     </fragment>
 
