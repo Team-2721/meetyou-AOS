@@ -21,6 +21,9 @@
         android:id="@+id/mainFragment"
         android:name="com.team2127.presentation.ui.main.main.MainFragment"
         android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_generateRoomFragment"
+            app:destination="@+id/generateRoomFragment"/>
 
     </fragment>
 
@@ -31,4 +34,10 @@
 
     </fragment>
 
+    <fragment
+        android:id="@+id/generateRoomFragment"
+        android:name="com.team2127.presentation.ui.main.generate.GenerateRoomFragment"
+        android:label="GenerateRoomFragment">
+
+    </fragment>
 </navigation>

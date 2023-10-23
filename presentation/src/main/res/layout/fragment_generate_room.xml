@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="vm"
+            type="com.team2127.presentation.ui.main.generate.GeneateRoomViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/tool_bar_generate_room"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/h3"
+            android:background="@color/white"
+            app:title="@string/generate_room_title"
+            app:titleCentered="true"
+            app:navigationIcon="@drawable/ic_left_black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:id="@+id/view_generate_room_tool_bar_line"
+            android:layout_width="110dp"
+            android:layout_height="1dp"
+            android:background="@color/normal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/tool_bar_generate_room"/>
+
+        <TextView
+            android:id="@+id/tv_generate_room_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/b3"
+            android:text="@string/generate_room_name"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_generate_room_tool_bar_line"/>
+
+        <EditText
+            android:id="@+id/et_generate_room_input_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="@style/b3"
+            android:hint="@string/generate_room_input_name"
+            android:textColorHint="@color/hint"
+            android:background="@drawable/corners_all_5"
+            android:backgroundTint="@color/alternative"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_generate_room_name"/>
+
+        <TextView
+            android:id="@+id/tv_generate_room_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/b3"
+            android:text="@string/generate_room_count"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_generate_room_input_name"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/text_ly_generate_room_input_count"
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:background="@drawable/corners_all_5"
+            android:backgroundTint="@color/alternative"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_generate_room_count">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoComplete_generate_room_input_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/b3"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:drawableStart="@drawable/ic_human_black"
+                android:textAlignment="center"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tv_generate_room_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/b3"
+            android:text="@string/generate_room_date"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_ly_generate_room_input_count"/>
+
+
+        <EditText
+            android:id="@+id/et_generate_room_input_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/b3"
+            android:background="@drawable/corners_all_5"
+            android:backgroundTint="@color/alternative"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_generate_room_date"/>
+
+        <TextView
+            android:id="@+id/tv_generate_room_memo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/b3"
+            android:text="@string/generate_room_memo"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_generate_room_input_date"/>
+
+        <EditText
+            android:id="@+id/et_generate_room_input_memo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/b3"
+            android:hint="@string/generate_room_input_memo"
+            android:textColorHint="@color/hint"
+            android:background="@drawable/corners_all_5"
+            android:backgroundTint="@color/alternative"
+            android:layout_marginStart="28dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_generate_room_memo"/>
+
+        <Button
+            android:id="@+id/btn_generate_room"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            style="@style/b1"
+            android:text="@string/generate_room_title"
+            android:textColor="@color/white"
+            android:background="@drawable/corners_all_30"
+            android:layout_marginTop="60dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_generate_room_input_memo"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

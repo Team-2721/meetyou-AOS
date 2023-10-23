@@ -183,18 +183,18 @@
 
         <Button
             android:id="@+id/btn_sign_up_complete"
-            android:layout_width="match_parent"
+            android:layout_width="140dp"
             android:layout_height="wrap_content"
             style="@style/b1"
             android:text="@string/sign_up_complete"
             android:textColor="@color/white"
             android:background="@drawable/corners_all_30"
-            android:layout_marginBottom="60dp"
+            android:layout_marginTop="60dp"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintTop_toBottomOf="@+id/et_sign_up_input_password_confirm"/>
 
 
 
