@@ -48,7 +48,8 @@ class LoginFragment: BaseFragment<FragmentLoginBinding>(
 
     private fun handleEvent(event: LoginViewModel.Event){
         when (event){
-            LoginViewModel.Event.LoginFailed -> { Toast.makeText(context, "로그인에 실패 하였습니다. \n아이디와 비밀번호를 확인해 주세요.", Toast.LENGTH_SHORT).show()}
+            LoginViewModel.Event.LoginFailed -> {
+                Toast.makeText(context, "로그인에 실패 하였습니다. \n아이디와 비밀번호를 확인해 주세요.", Toast.LENGTH_SHORT).show()}
             LoginViewModel.Event.LoginSuccess -> {
                 Toast.makeText(context, "로그인에 성공 하였습니다.", Toast.LENGTH_SHORT).show()
                 moveToMain()

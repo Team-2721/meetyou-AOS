@@ -24,7 +24,7 @@
     <!-- sign up -->
     <string name="sign_up_profile_image">프로필사진</string>
     <string name="sign_up_nickname">닉네임</string>
-    <string name="sign_up_nickname_rule">자음만으로는 사용할수 없으며 2~20글자로 가능</string>
+    <string name="sign_up_nickname_rule">영문 대소문, 한글만 포함하여 2~20글자로 가능(자음, 모음만 X)</string>
     <string name="sign_up_id">아이디</string>
     <string name="sign_up_id_rule">영문대소문자와 숫자만 포함하여 4~15글자로 가능</string>
     <string name="sign_up_password">비밀번호</string>
