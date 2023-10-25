@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
         <variable
             name="vm"
-            type="com.team2127.presentation.ui.main.generate.GeneateRoomViewModel" />
+            type="com.team2127.presentation.ui.main.generate.GenerateRoomViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,7 +17,7 @@
             android:id="@+id/tool_bar_generate_room"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/h3"
+            app:titleTextAppearance="@style/h3"
             android:background="@color/white"
             app:title="@string/generate_room_title"
             app:titleCentered="true"
@@ -38,7 +39,7 @@
             android:id="@+id/tv_generate_room_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/b3"
+            android:textAppearance="@style/b3"
             android:text="@string/generate_room_name"
             android:layout_marginStart="28dp"
             android:layout_marginTop="40dp"
@@ -49,11 +50,14 @@
             android:id="@+id/et_generate_room_input_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            style="@style/b3"
+            android:textAppearance="@style/b3"
+            android:text="@={vm.roomTitle}"
             android:hint="@string/generate_room_input_name"
             android:textColorHint="@color/hint"
             android:background="@drawable/corners_all_5"
             android:backgroundTint="@color/alternative"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
             android:layout_marginTop="16dp"
@@ -65,53 +69,48 @@
             android:id="@+id/tv_generate_room_count"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/b3"
+            android:textAppearance="@style/b3"
             android:text="@string/generate_room_count"
             android:layout_marginStart="28dp"
             android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/et_generate_room_input_name"/>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_ly_generate_room_input_count"
-            android:layout_width="140dp"
-            android:layout_height="48dp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        <Spinner
+            android:id="@+id/spinner_generate_room_input_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.5"
             android:background="@drawable/corners_all_5"
             android:backgroundTint="@color/alternative"
             android:layout_marginStart="28dp"
-            android:layout_marginTop="16dp"
+            android:drawableStart="@drawable/ic_human_black"
+            android:drawableEnd="@drawable/ic_down_black"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_generate_room_count">
-
-            <AutoCompleteTextView
-                android:id="@+id/autoComplete_generate_room_input_count"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                style="@style/b3"
-                android:outlineAmbientShadowColor="@android:color/transparent"
-                android:drawableStart="@drawable/ic_human_black"
-                android:textAlignment="center"/>
-        </com.google.android.material.textfield.TextInputLayout>
+            app:layout_constraintTop_toBottomOf="@+id/tv_generate_room_count"
+            tools:entries="@{vm.spinnerEntry}"
+            tools:selectedValue="@={vm.peopleCount}"/>
 
         <TextView
             android:id="@+id/tv_generate_room_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/b3"
+            android:textAppearance="@style/b3"
             android:text="@string/generate_room_date"
             android:layout_marginStart="28dp"
             android:layout_marginTop="32dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text_ly_generate_room_input_count"/>
+            app:layout_constraintTop_toBottomOf="@+id/spinner_generate_room_input_count"/>
 
 
-        <EditText
+        <Button
             android:id="@+id/et_generate_room_input_date"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/b3"
-            android:background="@drawable/corners_all_5"
+            android:textAppearance="@style/b3"
+            android:text="@{vm.date}"
+            android:drawableEnd="@drawable/ic_down_black"
+            app:background="@drawable/corners_all_5"
             android:backgroundTint="@color/alternative"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
@@ -124,7 +123,7 @@
             android:id="@+id/tv_generate_room_memo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/b3"
+            android:textAppearance="@style/b3"
             android:text="@string/generate_room_memo"
             android:layout_marginStart="28dp"
             android:layout_marginTop="32dp"
@@ -135,11 +134,13 @@
             android:id="@+id/et_generate_room_input_memo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            style="@style/b3"
+            android:textAppearance="@style/b3"
+            android:text="@={vm.memo}"
             android:hint="@string/generate_room_input_memo"
             android:textColorHint="@color/hint"
             android:background="@drawable/corners_all_5"
             android:backgroundTint="@color/alternative"
+            android:paddingStart="8dp"
             android:layout_marginStart="28dp"
             android:layout_marginEnd="28dp"
             android:layout_marginTop="16dp"
