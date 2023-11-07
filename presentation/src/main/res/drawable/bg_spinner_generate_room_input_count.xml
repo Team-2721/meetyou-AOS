@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <solid android:color="@color/alternative"></solid>
+                    <corners
+                        android:radius="5dp"/>
+                </shape>
+            </item>
+            <item android:drawable="@drawable/ic_human_black"
+                android:gravity="center|start">
+            </item>
+            <item android:drawable="@drawable/ic_down_black"
+                android:gravity="center|end">
+            </item>
+
+        </layer-list>
+    </item>
+</selector>

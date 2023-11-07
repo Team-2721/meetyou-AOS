@@ -10,31 +10,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75e1e6e7-bd3c-4b03-a0c9-8db63f5a72b9" name="Changes" comment="">
-<<<<<<< HEAD
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/ResponseDTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/main/AttendeeInfoDTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/main/GenerateRoomDataDTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/model/main/GenerateRoomRequestDTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/service/MainService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/MainModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/MainModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/service/LoginService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/service/LoginService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/main/MainFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/main/MainFragment.kt" afterDir="false" />
-=======
-      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/intercepter/SessionInterceptor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/dependencies-accessors/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.5/gc.properties" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/data/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/NetworkModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/layout/fragment_login.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/layout/fragment_login.xml" afterDir="false" />
->>>>>>> meetyoy-aos/feature/MeetU-08
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/generate/GenerateRoomFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/generate/GenerateRoomFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/generate/GenerateRoomViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/generate/GenerateRoomViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/layout/fragment_generate_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/layout/fragment_generate_room.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/styles.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/jm/.android/avd/Pixel_2_API_31.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[R5CT20FVEAR]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -46,11 +43,11 @@
         <option value="valueResourceFile" />
         <option value="Kotlin File" />
         <option value="navigationResourceFile" />
-        <option value="layoutResourceFile" />
         <option value="resourceFile" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Data Class" />
+        <option value="layoutResourceFile" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>

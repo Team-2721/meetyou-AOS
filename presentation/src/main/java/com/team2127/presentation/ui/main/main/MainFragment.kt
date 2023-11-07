@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.team2127.presentation.databinding.FragmentMainBinding
 import com.team2127.presentation.ui.base.BaseFragment
 import com.team2127.presentation.ui.util.repeatOnStarted
@@ -51,8 +52,8 @@ class MainFragment: BaseFragment<FragmentMainBinding>(
     }
 
     override fun onDestroyView() {
-        super.onDestroyView()
         binding.rvMainRoomList.adapter = null
+        super.onDestroyView()
     }
 
     private fun initRoomListRecyclerView(){
@@ -63,6 +64,8 @@ class MainFragment: BaseFragment<FragmentMainBinding>(
     }
 
     private fun moveToGenerateRoom(){
+        val action = MainFragmentDirections.actionMainFragmentToGenerateRoomFragment()
+        findNavController().navigate(action)
     }
 
     private fun handleEvent(event: MainViewModel.Event){
