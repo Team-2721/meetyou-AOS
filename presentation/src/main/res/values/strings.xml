@@ -40,6 +40,7 @@
     <string name="generate_room_input_name">방이름을 입력하세요</string>
     <string name="generate_room_count">인원</string>
     <string name="generate_room_date">약속 날짜</string>
+    <string name="generate_room_start_and_end_date">%s ~ %s</string>
     <string name="generate_room_memo">메모</string>
     <string name="generate_room_input_memo">메모를 입력하세요</string>
 
@@ -54,5 +55,7 @@
         <item>9명</item>
         <item>10명</item>
     </string-array>
+
+    <string name="date_picker_confirm">확인</string>
 
 </resources>
