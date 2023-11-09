@@ -10,21 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="75e1e6e7-bd3c-4b03-a0c9-8db63f5a72b9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.5/gc.properties" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/CookieDataStoreModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/intercepter/SessionInterceptor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/source/CookieDataSource.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/generate/GenerateRoomFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/generate/GenerateRoomFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/generate/GenerateRoomViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/main/generate/GenerateRoomViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/layout/fragment_generate_room.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/layout/fragment_generate_room.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/values/styles.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/values/styles.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/data/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/LoginModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/LoginModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/NetworkModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/data/src/main/java/com/team2127/data/di/NetworkModule.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/domain/src/main/java/com/team2127/domain/usecase/login/LoginUseCase.kt" beforeDir="false" afterPath="$PROJECT_DIR$/domain/src/main/java/com/team2127/domain/usecase/login/LoginUseCase.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/login/sign_up/SignUpFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/login/sign_up/SignUpFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/login/sign_up/SignUpViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/java/com/team2127/presentation/ui/login/sign_up/SignUpViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/presentation/src/main/res/navigation/main_graph.xml" beforeDir="false" afterPath="$PROJECT_DIR$/presentation/src/main/res/navigation/main_graph.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +38,12 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
-        <option value="Kotlin File" />
         <option value="navigationResourceFile" />
         <option value="resourceFile" />
         <option value="Kotlin Interface" />
         <option value="Kotlin Data Class" />
         <option value="layoutResourceFile" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>

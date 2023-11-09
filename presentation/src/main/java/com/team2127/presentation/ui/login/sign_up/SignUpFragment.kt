@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import com.team2127.presentation.databinding.FragmentSignUpBinding
 import com.team2127.presentation.ui.base.BaseFragment
 import com.team2127.presentation.ui.util.repeatOnStarted
@@ -61,6 +62,14 @@ class SignUpFragment : BaseFragment<FragmentSignUpBinding>(
 
             SignUpViewModel.Event.SuccessSignUp -> {
                 Toast.makeText(context, "회원가입에 성공하셨습니다. 축하드립니다!!", Toast.LENGTH_SHORT).show()
+                viewModel.login()
+            }
+            SignUpViewModel.Event.FailLogin -> {
+                val action = SignUpFragmentDirections.actionSignUpFragmentToMainFragment()
+                findNavController().navigate(action)
+            }
+            SignUpViewModel.Event.SuccessLogin -> {
+                findNavController().popBackStack()
             }
         }
     }

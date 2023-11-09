@@ -1,14 +1,23 @@
 package com.team2127.data.di
 
+import android.util.Log
 import com.orhanobut.logger.BuildConfig
 import com.squareup.moshi.Moshi
+import com.team2127.data.intercepter.AddInterceptor
+import com.team2127.data.intercepter.MemoryInterceptor
+import com.team2127.data.intercepter.isJsonArray
+import com.team2127.data.intercepter.isJsonObject
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
+import okhttp3.Interceptor
 import okhttp3.JavaNetCookieJar
 import okhttp3.OkHttpClient
+import okhttp3.Response
 import okhttp3.logging.HttpLoggingInterceptor
+import org.json.JSONArray
+import org.json.JSONObject
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import java.net.CookieManager
@@ -27,24 +36,42 @@ annotation class SessionNetworkObject
 
 @Module
 @InstallIn(SingletonComponent::class)
-object NetworkModule{
+object NetworkModule {
 
     @NormaNetworkObject
     @Singleton
     @Provides
-    fun provideNormalOkHttpClient(): OkHttpClient =
-        if (BuildConfig.DEBUG){
-            val loggingInterceptor = HttpLoggingInterceptor().apply {
-                setLevel(HttpLoggingInterceptor.Level.BODY)
-            }
-            OkHttpClient.Builder()
-                .addInterceptor(loggingInterceptor)
-                .build()
-        } else {
-            OkHttpClient.Builder()
-                .build()
-        }
+    fun provideNormalOkHttpClient(
+        memoryInterceptor: MemoryInterceptor
+    ): OkHttpClient {
+        val loggingInterceptor = HttpLoggingInterceptor { message ->
+            when {
+                message.isJsonObject() -> {
+                    Log.d(
+                        "jomi",
+                        "JSONObject : " + JSONObject(message).toString(4)
+                    )
+                }
 
+                message.isJsonArray() -> Log.d(
+                    "jomi",
+                    "JsonArray : " + JSONArray(message).toString(4)
+                )
+
+                else -> try {
+                    Log.d("jomi", JSONObject(message).toString(4))
+                } catch (e: Exception) {
+                    Log.d("jomi", message)
+                }
+            }
+        }
+        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
+
+        return OkHttpClient.Builder()
+            .addInterceptor(loggingInterceptor)
+            .addInterceptor(memoryInterceptor)
+            .build()
+    }
     @NormaNetworkObject
     @Singleton
     @Provides
@@ -62,20 +89,37 @@ object NetworkModule{
     @Singleton
     @Provides
     fun provideSessionOkHttpClient(
-    ): OkHttpClient =
-        if (BuildConfig.DEBUG) {
-            val loggingInterceptor = HttpLoggingInterceptor().apply {
-                setLevel(HttpLoggingInterceptor.Level.BODY)
+        addInterceptor: AddInterceptor
+    ): OkHttpClient {
+        val loggingInterceptor = HttpLoggingInterceptor { message ->
+            when {
+                message.isJsonObject() -> Log.d(
+                    "jomi",
+                    "JSONObject : " + JSONObject(message).toString(4)
+                )
+
+                message.isJsonArray() -> Log.d(
+                    "jomi",
+                    "JsonArray : " + JSONObject(message).toString(4)
+                )
+
+                else -> try {
+                    Log.d("jomi", JSONObject(message).toString(4))
+                } catch (e: Exception) {
+                    Log.d("jomi", message)
+                }
             }
-            OkHttpClient.Builder()
-                .addInterceptor(loggingInterceptor)
-                .cookieJar(JavaNetCookieJar(CookieManager()))
-                .build()
-        } else {
-            OkHttpClient.Builder()
-                .cookieJar(JavaNetCookieJar(CookieManager()))
-                .build()
         }
+
+
+        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
+
+        return OkHttpClient.Builder()
+            .addInterceptor(loggingInterceptor)
+            .addInterceptor(addInterceptor)
+            .build()
+    }
+
 
     @SessionNetworkObject
     @Singleton

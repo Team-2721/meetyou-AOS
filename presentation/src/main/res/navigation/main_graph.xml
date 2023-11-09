@@ -31,6 +31,9 @@
         android:id="@+id/signUpFragment"
         android:name="com.team2127.presentation.ui.login.sign_up.SignUpFragment"
         android:label="SignUpFragment">
+        <action
+            android:id="@+id/action_signUpFragment_to_mainFragment"
+            app:destination="@+id/mainFragment"/>
 
     </fragment>
 

@@ -2,8 +2,10 @@ package com.team2127.presentation.ui.login.sign_up
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import com.team2127.domain.model.login.LoginReqInfo
 import com.team2127.domain.model.login.SignupReqInfo
 import com.team2127.domain.usecase.image.GetImageUseCase
+import com.team2127.domain.usecase.login.LoginUseCase
 import com.team2127.domain.usecase.login.SignupUseCase
 import com.team2127.presentation.ui.util.MutableEventFlow
 import com.team2127.presentation.ui.util.asEventFlow
@@ -15,7 +17,7 @@ import javax.inject.Inject
 
 @HiltViewModel
 class SignUpViewModel @Inject constructor(
-    private val getImageUseCase: GetImageUseCase,
+    private val loginUseCase: LoginUseCase,
     private val signupUseCase: SignupUseCase
 ): ViewModel() {
 
@@ -56,6 +58,25 @@ class SignUpViewModel @Inject constructor(
         }
     }
 
+    fun login(){
+        viewModelScope.launch {
+            val id = inputId.value
+            val password = inputPassword.value
+
+            val result = loginUseCase(LoginReqInfo(
+                id,
+                password
+            ))
+
+            if (result.isSuccess){
+                _event.emit(Event.SuccessLogin)
+            } else {
+                _event.emit(Event.FailLogin)
+            }
+        }
+    }
+
+
     private suspend fun isGoodNickname(nickname: String): Boolean{
         if (nickname.length > 21 || nickname.length < 2){
             _event.emit(Event.WrongLengthNickname)
@@ -73,7 +94,7 @@ class SignUpViewModel @Inject constructor(
             _event.emit(Event.WrongLengthId)
             return false
         }
-        if (toUseRegex(id, IS_GOOD_ID)){
+        if (toUseRegex(id, IS_GOOD_ID).not()){
             _event.emit(Event.PleaseCheckId)
             return false
         }
@@ -85,7 +106,7 @@ class SignUpViewModel @Inject constructor(
             _event.emit(Event.WrongLengthPassword)
             return false
         }
-        if (toUseRegex(password, IS_GOOD_PASSWORD)){
+        if (toUseRegex(password, IS_GOOD_PASSWORD).not()){
             _event.emit(Event.PleaseCheckPassword)
             return false
         }
@@ -110,6 +131,8 @@ class SignUpViewModel @Inject constructor(
         object WrongLengthPassword: Event()
         object PleaseCheckPassword: Event()
         object NotSamePassword: Event()
+        object SuccessLogin: Event()
+        object FailLogin: Event()
     }
 
     companion object{
